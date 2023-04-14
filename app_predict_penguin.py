@@ -35,7 +35,7 @@ with tab1:
 
     st.write('Predicted Species: ' , species_encoder.inverse_transform(pred)[0])
 with tab2:
-    st.header("Evaluattions on Five Techniques")
+    st.header("Evaluations on Five Techniques")
     evaluatuaions = pickle.load(open('evals.all.sav','rb'))
     x = evaluations.columns
     fig = px.Figure(data=[
