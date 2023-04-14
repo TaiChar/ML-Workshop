@@ -37,7 +37,6 @@ with tab1:
 with tab2:
     st.header("Evaluattions on Five Techniques")
     evaluatuaions = pickle.load(open('evals.all.sav','rb'))
-    st.dataframe(evaluations)
     x = evaluations.columns
     fig = px.Figure(data=[
         px.Bar(name = 'Decision Tree',
